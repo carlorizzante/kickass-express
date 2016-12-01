@@ -1,0 +1,27 @@
+{
+  "name": "kickass-express",
+  "version": "0.1.0",
+  "description": "Starter setup for a kickass Express application",
+  "main": "app.js",
+  "scripts": {
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && nodemon --exec 'mocha ./**/*.test.js'",
+    "start": "node --use_strict app.js",
+    "watch": "nodemon --use_strict app.js"
+  },
+  "keywords": [],
+  "author": "Carlo Rizzante <hello@carlorizzante.com> (http://carlorizzante.com)",
+  "license": "MIT",
+  "engines": {
+    "node": "7.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  }
+}
